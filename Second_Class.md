@@ -17,7 +17,7 @@
 
 - 熟悉 hugging face 下载功能，使用 `huggingface_hub` python 包，下载 `InternLM-20B` 的 config.json 文件到本地（需截图下载过程）。
 
-  
+  ![image-20240110183143578](img/img_2/image-20240110183143578.png)
 
 **进阶作业（可选做）**
 
