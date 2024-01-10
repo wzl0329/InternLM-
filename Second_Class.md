@@ -16,6 +16,15 @@
   ![image-20240109172849299](img/img_2/image-20240109172849299.png)
 
 - 熟悉 hugging face 下载功能，使用 `huggingface_hub` python 包，下载 `InternLM-20B` 的 config.json 文件到本地（需截图下载过程）。
+-   在下载时如果网络连接错误可指定环境变量，同时使用local_dir指定本地路径
+  
+  ```python
+  import os
+  os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+  from huggingface_hub import hf_hub_download  # Load model directly
+  
+  hf_hub_download(repo_id="internlm/internlm-7b", filename="config.json", local_dir="download")
+  ```
 
   ![image-20240110183143578](img/img_2/image-20240110183143578.png)
 
